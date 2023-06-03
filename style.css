@@ -7,9 +7,16 @@ body {
   background-color: #000;
 }
 
+.container {
+  height: 200vh; /* Increase the height to allow scrolling */
+}
+
 .layer {
   height: 100vh;
-  overflow: hidden;
+}
+
+.first {
+  z-index: 2;
 }
 
 .harold {
@@ -18,6 +25,7 @@ body {
   object-fit: cover;
   position: absolute;
   left: -25%;
+  top: 0%;
   z-index: 1;
 }
 
@@ -26,6 +34,7 @@ body {
   height: 100%;
   filter: grayscale() blur(10px);
   opacity: 50%;
+  position: absolute;
 }
 
 .content {
@@ -34,7 +43,6 @@ body {
   top: 50%;
   left: 40%;
   transform: translateY(-50%);
-  overflow: hidden;
 }
 
 .title {
@@ -48,4 +56,22 @@ body {
   font-size: 2rem;
   color: #e9c46a;
   text-align: center;
+}
+
+.bodyText {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  opacity: 50%;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  font-style: italic;
+}
+
+.second {
+  z-index: 1;
+  color: red;
+  position: absolute;
+  top: 0%;
+  opacity: 0%;
 }
