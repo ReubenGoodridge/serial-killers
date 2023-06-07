@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+button:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
 .panel {
   position: absolute;
   top: 0;
@@ -66,14 +71,6 @@ body {
   text-align: center;
 }
 
-.second {
-  z-index: 1;
-  color: red;
-  top: 0%;
-  opacity: 0%;
-  font-size: 100px;
-}
-
 .begin {
   font-size: 1.5rem;
   margin-top: 2rem;
@@ -86,7 +83,7 @@ body {
   border-radius: 2rem;
 }
 
-button:hover {
-  opacity: 75%;
-  cursor: pointer;
+#panel3 {
+  background-color: olivedrab;
+  transform: translateX(200%);
 }
