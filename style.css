@@ -5,10 +5,10 @@
 
 body {
   background-color: #000;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-button:hover {
+button:hover, a:hover, span:hover {
   opacity: 75%;
   cursor: pointer;
 }
@@ -27,8 +27,11 @@ button:hover {
 }
 
 #panel2 {
-  background-color: blue;
   transform: translateX(100%);
+}
+
+#panel3 {
+  transform: translateX(200%);
 }
 
 .harold {
@@ -36,7 +39,7 @@ button:hover {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  left: -25%;
+  left: -20%;
   top: 0%;
   z-index: 1;
 }
@@ -47,28 +50,32 @@ button:hover {
   filter: grayscale() blur(10px);
   opacity: 50%;
   position: absolute;
+  z-index: -1;
 }
 
 .content {
   z-index: 2;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 35%;
   transform: translateY(-50%);
+  margin-right: 5rem;
   text-align: center;
 }
 
 .title {
   font-family: 'Cabin', sans-serif;
-  font-size: 15rem;
+  font-size: 8rem;
+  width: 100%;
   color: whitesmoke;
 }
 
 .subtitle {
   font-family: 'Mulish', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #e9c46a;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .begin {
@@ -83,7 +90,89 @@ button:hover {
   border-radius: 2rem;
 }
 
-#panel3 {
-  background-color: olivedrab;
-  transform: translateX(200%);
+#timeline {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  stroke-dasharray: 1920;
+  stroke-dashoffset: 1920;
+}
+
+.timeline-animation {
+  animation: dash 1.5s linear forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#document {
+  background-image: url(./assets/paper-texture.jpg);
+  filter: grayscale(35%);
+  width: 35rem;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  text-align: left;
+  transition: transform 0.5s ease;
+}
+
+#document .title {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: monospace;
+}
+
+#document .bodyText {
+  font-family: monospace;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+#document span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#document a {
+  font-family: monospace;
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#portrait {
+  background-image: url(./assets/paper-texture.jpg);
+  filter: grayscale(35%);
+  width: 35rem;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(110%);
+  top: 5%;
+  text-align: left;
+  transition: transform 0.5s ease;
+}
+
+#portrait img {
+  padding: 2rem;
+  opacity: 98%;
+}
+
+#portrait .title {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: monospace;
 }

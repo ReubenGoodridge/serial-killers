@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Mulish:wght@800&family=Noto+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Dr. Death</title>
+    <title>The Deadly Deception</title>
 </head>
 <body>
   <div class="container">
@@ -13,18 +13,35 @@
       <img src="./assets/harold-shipman-practice.png" alt="a blurry picture of Harold Shipman's medical practice" class="background">
       <img src="./assets/Harold-Shipman.png" alt="Image of Harold Shipman in black and white" class="harold">
       <div class="content">
-        <h1 class="title">Dr. Death</h1>
-        <h2 class="subtitle">who was he · what did he do · how did they catch him</h2>
+        <h1 class="title">The Deadly Deception</h1>
+        <h2 class="subtitle">Welcome to 'The Deadly Deception,' an interactive journey into the chilling crimes of Harold Shipman. Step into the dark world of one of Britain's most notorious serial killers and unravel the mysteries surrounding his shocking actions.</h2>
         <button class="begin" id="begin" onclick="next()">begin</button>
       </div>
     </div>
     <div class="panel" id="panel2">
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet dignissimos totam dolore, accusantium odit quia minus nostrum quas ipsum? Culpa dignissimos quos iure illo corrupti, veniam quaerat sapiente expedita.</h1>
-      <button onclick="prev()">back</button>
-      <button onclick="next()">next</button>
+      <img src="./assets/detective-office.png" alt="" class="background">
+      <div id="document">
+        <div class="documentContent">
+          <h1 class="title">Case File: Operation Deadly Deception</h1>
+          <h2 class="title">Subject: <span onclick="portrait()">Dr Harold Shipman</span></h2>
+          <h3 class="bodyText">Case Overview: <br>
+            Dr. Harold Shipman, a trusted figure in the medical community, has come under suspicion due to a series of unusual deaths among his patients. This seemingly unassuming doctor, once considered a beacon of care and compassion, has now become the focus of a covert investigation. The mounting evidence suggests a sinister truth - Dr. Shipman's healing hands were a façade concealing a hidden agenda of malevolence. As detectives, it is our solemn duty to uncover the chilling secrets lurking beneath the surface and expose the darkness that tainted the lives of countless innocents. This case demands meticulous scrutiny, an unwavering pursuit of truth, and an unwavering resolve to bring justice to the victims. Our journey into the depths of Dr. Shipman's twisted web begins now.</h3>
+          <a onclick="next()" class="task">Up to the task?</a>
+        </div>
+      </div>
+      <div id="portrait">
+        <img src="./assets/Harold-Shipman-Portrait.jpg" alt="">
+        <h1 class="title">Name: Harold Shipman</h1>
+        <h1 class="title">Occupation: Doctor</h1>
+        <h1 class="title">Age: 57</h1>
+        <h1 class="title">Born: 14th Jan 1946</h1>
+      </div>
     </div>
     <div class="panel" id="panel3">
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet dignissimos totam dolore, accusantium odit quia minus nostrum quas ipsum? Culpa dignissimos quos iure illo corrupti, veniam quaerat sapiente expedita.</h1>
+      <img src="./assets/detective-office.png" alt="" class="background">
+      <svg id="timeline">
+        <line x1="0" y1="100" x2="1920" y2="100" style="stroke:rgb(255,255,255);stroke-width:5" />
+      </svg>
       <button onclick="prev()">back</button>
     </div>
   </div>
