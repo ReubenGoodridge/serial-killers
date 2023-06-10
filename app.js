@@ -33,10 +33,12 @@ function prev() {
 function portrait() {
   const doc = document.getElementById('document')
   const portrait = document.getElementById('portrait')
+  const next = document.getElementById('next')
   if (docState === 1) {
     doc.style.transform = 'translateX(-135%)'
     portrait.style.transform = 'translateY(-0%)'
     docState = 2
+    next.classList.add('fade');
   } else {
     doc.style.transform = 'translateX(-50%)'
     portrait.style.transform = 'translateY(110%)'
