@@ -13,7 +13,7 @@ function next() {
   
   // Trigger timeline animation if on panel2
   const timeline = document.getElementById('timeline');
-  if(position === 4) {
+  if(position === 5) {
     timeline.classList.add('timeline-animation');
   }
 }

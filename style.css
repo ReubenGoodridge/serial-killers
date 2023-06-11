@@ -38,6 +38,10 @@ button:hover, a:hover, span:hover {
   transform: translateX(300%);
 }
 
+#panel5 {
+  transform: translateX(400%);
+}
+
 .harold {
   filter: grayscale();
   height: 100%;
