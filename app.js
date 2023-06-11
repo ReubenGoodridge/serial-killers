@@ -35,7 +35,7 @@ function portrait() {
   const portrait = document.getElementById('portrait')
   const next = document.getElementById('next')
   if (docState === 1) {
-    doc.style.transform = 'translateX(-135%)'
+    doc.style.transform = 'translateX(-120%)'
     portrait.style.transform = 'translateY(-0%)'
     docState = 2
     next.classList.add('fade');
