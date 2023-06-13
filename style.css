@@ -297,7 +297,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.5s ease-in-out;
   overflow: hidden;
   pointer-events: none; /* Disable pointer events on the cover div */
   object-fit: cover;
@@ -313,7 +313,7 @@ body {
   width: 100%;
   height: auto;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   object-fit: fill;
   filter: grayscale();
 }
@@ -324,8 +324,8 @@ body {
 
 .victimProfile.hide {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  animation: fadeOut 0.3s ease-in-out forwards;
+  transition: opacity 0.5s ease-in-out;
+  animation: fadeOut 0.5s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
