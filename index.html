@@ -13,20 +13,20 @@
       <img src="./assets/harold-shipman-practice.png" alt="a blurry picture of Harold Shipman's medical practice" class="background">
       <img src="./assets/Harold-Shipman.png" alt="Image of Harold Shipman in black and white" class="harold">
       <div class="content">
-        <h1 class="title">The Deadly Deception</h1>
-        <h2 class="subtitle">Welcome to 'The Deadly Deception,' an interactive journey into the chilling crimes of Harold Shipman. Step into the dark world of one of Britain's most notorious serial killers and unravel the mysteries surrounding his shocking actions.</h2>
-        <button class="begin" id="begin" onclick="next()">begin</button>
+        <h1 class="title">The Shipman Inquiry</h1>
+        <h2 class="subtitle">Harold Shipman was one of the UK's most recent and prolific serial killers. He killed his patients and covered his actions in their death certificates leading to the murders of over 200 people going unnoticed until 1998.</h2>
+        <button class="bttn" id="begin" onclick="next()">begin</button>
       </div>
     </div>
     <div class="panel" id="panel2">
       <img src="./assets/detective-office.png" alt="A detective office" class="background">
       <div id="document">
         <div class="documentContent">
-          <h1 class="title">Case File: Operation Deadly Deception</h1>
+          <h1 class="title">Case File: The Shipman Inquiry</h1>
           <h2 class="title">Subject: <span onclick="portrait()">Dr Harold Frederick Shipman</span></h2>
           <h3 class="bodyText">Case Overview: <br><br>
-            Dr. Harold Frederick Shipman, a respected medical practitioner, is the prime suspect in a string of suspicious deaths. Investigation into his activities has revealed an alarming pattern of patient mortality rates well above the norm. This disturbing discovery has cast a shadow of doubt over Shipman's benevolent facade. Our mission is to gather concrete evidence and expose the truth behind these heinous crimes. The pursuit of justice for the victims and their families drives us relentlessly as we delve into the dark secrets hidden within Shipman's medical practice.</h3>
-          <a onclick="next()" id="next">Meet the victims</a>
+            Dr. Harold Frederick Shipman, a respected medical practitioner in Hyde, Manchester, is the prime suspect in a string of suspicious deaths. Investigation into his activities has revealed an alarming pattern of patient mortality rates well above the norm. This disturbing discovery has cast a shadow of doubt over Shipman's name.<br><br>Today, you will learn about the 15 murders he was convicted of and the method he used to kill hundreds more.</h3>
+          <a onclick="next()" id="next">The victims</a>
         </div>
       </div>
       <div id="portrait">
@@ -38,7 +38,7 @@
         <h1 class="title">Born: 14th Jan 1946</h1>
         <h1 class="title">Nationality: British</h1>
         <h1 class="full" style="margin-top: 5rem">Description: </h1>
-        <h1 class="full">Harold Frederick Shipman is a Caucasian male of average build and height, standing approximately 5'11" (180 cm) tall. Born on January 14, 1946, he is now in his late 50s. Shipman has short, thinning gray hair with some areas maintaining a browner colour. He has dark brown eyes, and tends to wear thin, wireframe glasses. Shipman also has thick but short white beard and moustache.</h1>
+        <h1 class="full">Harold Frederick Shipman is a Caucasian male of average build and height, standing approximately 5'11" (180 cm) tall. Born on January 14, 1946, he would now be in his late 70s however, he committed suicide in prison at age 57 in 2004. <br><br> He was first hired as a GP in 1974 at Abraham Ormerod Medical Centre in Todmorden before opening his own surgery in Hyde at 21 Market Street.</h1>
       </div>
     </div>
     <div class="panel" id="panel3">
@@ -160,7 +160,23 @@
       </div>
     </div>
     <div class="panel" id="panel4">
-      <!--How Shipman killed his victims-->
+      <img src="./assets/hospital-ward.jpg" alt="A hospital ward" class="background">
+      <div class="diamorphine" id="diamorphine">
+        <img src="./assets/diamorphine.png" alt="phial of diamorphine" class="diamorphineImg">
+        <div class="diamorphineDesc">
+          <h1 class="title">DIAMORPHINE</h1>
+          <h3>A 100% pure, medical-grade heroin, often used as a painkiller.</h3>
+        </div>
+      </div>
+      <div class="quote">
+        <h2 class="text">"He injected her with something in the back of her hand."</h2>
+        <h4 class="speaker">- Debbie Bartlett about her grandma</h4>
+      </div>
+      <h3 id="type">Shipman killed all his victims with a lethal dose of Diamorphine - a pharmaceutical version of heroin used as a pain killer. He got away with it for so long as many people thought his victims (mainly older women) wouldn't live much longer anyway.<br><br> The Shipman Inquiry found that he had likely killed around 218 people with this method however, he was only convicted of 15 counts due to many of the other corpses being too far decomposed to still contain any of the diamorphine compound. </h3>
+      <div id="buttons">
+        <button class="bttn-empty" onclick="prev()" style="margin-right: 1.5rem;">prev</button>
+        <button class="bttn" onclick="next()">next</button>
+      </div>
     </div>
     <div class="panel" id="panel5">
       <img src="./assets/detective-office.png" alt="" class="background">

@@ -13,8 +13,17 @@ function next() {
   
   // Trigger timeline animation if on panel2
   const timeline = document.getElementById('timeline');
-  if(position === 5) {
+  if(position === 6) {
     timeline.classList.add('timeline-animation');
+  }
+  // Trigger the corner animation & quote type if on panel4
+  const diamorphine = document.getElementById('diamorphine');
+  const type = document.getElementById('type');
+  const buttons = document.getElementById('buttons');
+  if(position === 4) {
+    diamorphine.classList.add('rightCorner');
+    type.classList.add('fade');
+    buttons.classList.add('fade');
   }
 }
 
