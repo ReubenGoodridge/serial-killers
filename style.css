@@ -47,6 +47,10 @@ body {
   transform: translateX(400%);
 }
 
+#panel6 {
+  transform: translateX(500%);
+}
+
 .harold {
   filter: grayscale();
   height: 100%;
@@ -452,7 +456,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-#panel4 #type {
+#type {
   position: absolute;
   top: 35%;
   left: 9.6%;
@@ -464,7 +468,7 @@ body {
   animation-delay: 1s;
 }
 
-#buttons {
+#buttons1 {
   position: absolute;
   left: 15%;
   top: 65%;
@@ -568,4 +572,33 @@ body {
   position: relative;
   left: 44%;
   top: 55%;
+}
+
+#panel6 .title {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+#opinion {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 50rem;
+  word-wrap: break-word;
+  color: #e9c46a;
+  font-family: 'Noto Sans', sans-serif;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+#opinion a {
+  color: gainsboro;
+}
+
+#buttons2 {
+  position: absolute;
+  left: 5%;
+  top: 55%;
+  opacity: 0;
 }

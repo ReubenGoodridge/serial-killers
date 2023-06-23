@@ -14,11 +14,11 @@ function next() {
   // Trigger the corner animation & quote type if on panel4
   const diamorphine = document.getElementById('diamorphine');
   const type = document.getElementById('type');
-  const buttons = document.getElementById('buttons');
-  if(position === 4) {
+  const buttons1 = document.getElementById('buttons1');
+  if (position === 4) {
     diamorphine.classList.add('rightCorner');
     type.classList.add('fade');
-    buttons.classList.add('fade');
+    buttons1.classList.add('fade');
   }
   
   // Trigger gavel animations 
@@ -32,6 +32,14 @@ function next() {
       hammer.classList.add('hide');
       sentence.classList.add('fade');
     })
+  }
+
+  // Trigger opinion text to show
+  const opinion = document.getElementById('opinion');
+  const buttons2 = document.getElementById('buttons2');
+  if (position === 6) {
+    opinion.classList.add('fade');
+    buttons2.classList.add('fade');
   }
 }
 
