@@ -51,6 +51,10 @@ body {
   transform: translateX(500%);
 }
 
+#panel7 {
+  transform: translateX(600%);
+}
+
 .harold {
   filter: grayscale();
   height: 100%;
@@ -601,4 +605,15 @@ body {
   left: 5%;
   top: 55%;
   opacity: 0;
+}
+
+#panel7 {
+  background-color: grey;
+}
+
+#panel7 .title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
