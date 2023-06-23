@@ -11,11 +11,6 @@ function next() {
   // Bring panel2 from the right
   next.style.transform = 'translateX(0)';
   
-  // Trigger timeline animation if on panel2
-  const timeline = document.getElementById('timeline');
-  if(position === 6) {
-    timeline.classList.add('timeline-animation');
-  }
   // Trigger the corner animation & quote type if on panel4
   const diamorphine = document.getElementById('diamorphine');
   const type = document.getElementById('type');
@@ -24,6 +19,19 @@ function next() {
     diamorphine.classList.add('rightCorner');
     type.classList.add('fade');
     buttons.classList.add('fade');
+  }
+  
+  // Trigger gavel animations 
+  const hammer = document.getElementById('hammer');
+  const base = document.getElementById('base');
+  const sentence = document.getElementById('sentence');
+  if (position === 5) {
+    hammer.classList.add('hit');
+    hammer.addEventListener('animationend', () => {
+      base.classList.add('hide');
+      hammer.classList.add('hide');
+      sentence.classList.add('fade');
+    })
   }
 }
 

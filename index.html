@@ -170,7 +170,7 @@
       </div>
       <div class="quote">
         <h2 class="text">"He injected her with something in the back of her hand."</h2>
-        <h4 class="speaker">- Debbie Bartlett about her grandma</h4>
+        <h4 class="speaker">- Debbie Bartlett about Shipman killing her grandma</h4>
       </div>
       <h3 id="type">Shipman killed all his victims with a lethal dose of Diamorphine - a pharmaceutical version of heroin used as a pain killer. He got away with it for so long as many people thought his victims (mainly older women) wouldn't live much longer anyway.<br><br> The Shipman Inquiry found that he had likely killed around 218 people with this method however, he was only convicted of 15 counts due to many of the other corpses being too far decomposed to still contain any of the diamorphine compound. </h3>
       <div id="buttons">
@@ -178,12 +178,17 @@
         <button class="bttn" onclick="next()">next</button>
       </div>
     </div>
-    <div class="panel" id="panel5">
-      <img src="./assets/detective-office.png" alt="" class="background">
-      <svg id="timeline">
-        <line x1="0" y1="100" x2="1920" y2="100" style="stroke:rgb(255,255,255);stroke-width:5" />
-      </svg>
-      <button onclick="prev()">back</button>
+    <div class="panel courtroom" id="panel5">
+      <img src="./assets/coutroom.png" alt="A courtroom" class="background">
+      <img src="./assets/hammer.png" alt="A gavel without a base" id="hammer">
+      <img src="./assets/base.png" alt="The base of a gavel" id="base">
+      <div id="sentence">
+        <h1 id="sentenced">SENTENCED</h1>
+        <h3 id="to">to</h3>
+        <h1 id="life">LIFE WITH WHOLE LIFE ORDER</h1>
+        <button class="bttn-empty" onclick="prev()" style="margin-right: 1.5rem;">prev</button>
+        <button class="bttn" onclick="next()">next</button>
+      </div>
     </div>
   </div>
   <script src="./app.js"></script>
